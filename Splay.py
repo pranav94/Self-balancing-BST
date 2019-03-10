@@ -34,5 +34,3 @@ class Splay(BST):
     def search(self, val):
         self.root = self.splay(self.root, val)
         return super().search(val)
-
-
