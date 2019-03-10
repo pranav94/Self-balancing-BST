@@ -4,9 +4,6 @@ from utils import rotate_left, rotate_right
 
 
 class Splay(BST):
-    def __init__(self):
-        super().__init__()
-
     def splay(self, root, val):
         if root is None or root.val == val:
             return root
