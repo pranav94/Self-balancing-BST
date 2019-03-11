@@ -64,7 +64,8 @@ def sequential():
             print('{},{},{}'.format(name, n, round(1000 * elapsed, 4)))
 
 
-if __name__ == "__main__":
+def run():
+    print("** AVL Tree **")
     randomized()
     recurring()
     sequential()
