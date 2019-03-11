@@ -27,7 +27,7 @@ def randomized():
 
 def recurring():
     print("#########################")
-    print("Random distribution of data")
+    print("Recurring data")
     print("#########################")
     for n in range(1000, 100000, 2000):
         b = Treap()
@@ -43,7 +43,7 @@ def recurring():
 
 def sequential():
     print("#########################")
-    print("Random distribution of data")
+    print("Sequential data")
     print("#########################")
     operations = OrderedDict({
         "Insert": lambda b, x: b.insert(x),

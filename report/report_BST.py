@@ -6,6 +6,9 @@ from BST import BST
 
 
 def randomized():
+    print("#########################")
+    print("Random distribution of data")
+    print("#########################")
     operations = OrderedDict({
         "Insert": lambda b, x: b.insert(x),
         "Search": lambda b, x: b.search(x),
@@ -23,6 +26,9 @@ def randomized():
 
 
 def recurring():
+    print("#########################")
+    print("Recurring data")
+    print("#########################")
     for n in range(1000, 100000, 2000):
         b = BST()
         for i in random.sample(range(0, n), n):
@@ -36,6 +42,9 @@ def recurring():
 
 
 def sequential():
+    print("#########################")
+    print("Sequential data")
+    print("#########################")
     operations = OrderedDict({
         "Insert": lambda b, x: b.insert(x),
         "Search": lambda b, x: b.search(x),
