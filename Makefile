@@ -2,4 +2,4 @@ main test:
 		@python3 -m unittest
 
 report :
-		@python3 -m unittest -q test/report/BST.py
+		@python3 report_BST.py
