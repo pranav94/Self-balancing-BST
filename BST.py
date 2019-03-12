@@ -7,7 +7,7 @@ class BST():
 
     def search(self, val):
         root = self.root
-        while(root):
+        while root:
             if val == root.val:
                 return root
             root = root.left if val < root.val else root.right
@@ -29,12 +29,6 @@ class BST():
             self.root = TreeNode(val)
             return
         self.insert_node(self.root, val)
-
-    @staticmethod
-    def replace_node(node1, node2):
-        node1.val = node2.val
-        node1.left = node2.left
-        node1.right = node2.right
 
     def delete_node(self, node, val):
         if not node:
@@ -63,9 +57,10 @@ class BST():
     def delete(self,  val):
         self.root = self.delete_node(self.root, val)
 
-    def predecessor(self, node):
+    @staticmethod
+    def predecessor(node):
         node = node.left
-        while(node.right):
+        while node.right:
             node = node.right
 
         return node
